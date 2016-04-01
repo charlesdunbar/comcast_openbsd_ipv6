@@ -1,0 +1,2 @@
+/usr/local/sbin/dhcp6c -dDc /etc/dhcp6c.conf em0
+/usr/sbin/rtadvd em1

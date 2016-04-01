@@ -1,0 +1,11 @@
+# Add your default route IPs here
+# For some reason, I had to manually find the ipv6 next hop
+# using `ndp -a | grep em0` and look for the entry that had a timer on it
+# % ndp -a | grep em0
+# fe80::200:24ff:fed0:6408%em0         00:00:24:d0:64:08    em0 permanent R l
+# fe80::201:5cff:fe6d:b846%em0         00:01:5c:6d:b8:46    em0 29s       R R
+# In my network, I have a my WAP as my LAN gateway - so I have its IP here.
+# Since em0 is dhcp, it ignores the ipv4 part
+
+192.168.0.1
+fe80::201:5cff:fe6d:b846%em0
